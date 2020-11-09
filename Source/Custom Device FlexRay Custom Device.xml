@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomDevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Custom Device.xsd">
+<XSDVersion Major="2010" Minor="0" Fix="0" Build="0" />
+  <AddMenu>
+    <eng>FlexRay Custom Device</eng>
+    <loc>FlexRay Custom Device</loc>
+  </AddMenu>
+  <Version>1.0.0</Version>
+  <Type>Inline HW Interface</Type>
+  <MaxOccurrence>4</MaxOccurrence>
+  <MainPageGUID>852c7a30-5944-4e88-8c64-fbd6d2862294</MainPageGUID>
+  <InitializationVI>
+    <Type>Action</Type>
+    <Item2Launch>
+      <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\FlexRay Custom Device\FlexRay Custom Device Configuration.llb\Initialization VI.vi</Path>
+    </Item2Launch>
+  </InitializationVI>
+	<CustomDeviceVI>
+		<SourceDistribution>
+			<Source>
+				<SupportedTarget>Windows</SupportedTarget>
+				<Source>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\FlexRay Custom Device\Windows\FlexRay Custom Device Engine Windows.llb\RT Driver VI.vi</Path>
+				</Source>
+				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\FlexRay Custom Device\FlexRay Custom Device Engine Windows.llb\RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>
+			<Source>
+				<SupportedTarget>Pharlap</SupportedTarget>
+				<Source>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\FlexRay Custom Device\PharLap\FlexRay Custom Device Engine Pharlap.llb\RT Driver VI.vi</Path>
+				</Source>
+				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\FlexRay Custom Device\FlexRay Custom Device Engine Pharlap.llb\RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>
+			<Source>
+				<SupportedTarget>Linux_x64</SupportedTarget>
+				<Source>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\FlexRay Custom Device\Linux_64\FlexRay Custom Device Engine Linux_64.llb\RT Driver VI.vi</Path>
+				</Source>
+				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\FlexRay Custom Device\FlexRay Custom Device Engine Linux_64.llb\RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>	
+		</SourceDistribution>
+	</CustomDeviceVI>
+	<Dependencies>
+	</Dependencies>
+	<Pages>
+	<Page>
+      <Name>
+        <eng>FlexRay Custom Device</eng>
+        <loc>FlexRay Custom Device</loc>
+      </Name>
+      <GUID>852c7a30-5944-4e88-8c64-fbd6d2862294</GUID>
+      <Glyph>
+			  <Type>To Application Data Dir</Type>
+			  <Path>System Explorer\Glyphs\NI-XNET FlexRay.png</Path>
+		  </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		    <Path>Custom Devices\FlexRay Custom Device\FlexRay Custom Device Configuration.llb\Main Page.vi</Path>
+      </Item2Launch>
+    </Page>
+	<Page>
+      <Name>
+        <eng>Node</eng>
+        <loc>Node</loc>
+      </Name>
+      <GUID>41ebe26f-c608-450f-b619-084b7dff9332</GUID>
+      <Glyph>
+			  <Type>To Application Data Dir</Type>
+			  <Path>System Explorer\Glyphs\NI-XNET Incoming.png</Path>
+		  </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\FlexRay Custom Device\FlexRay Custom Device Configuration.llb\Node.vi</Path>
+      </Item2Launch>
+    </Page>
+    <Page>
+      <Name>
+        <eng>Incoming</eng>
+        <loc>Incoming</loc>
+      </Name>
+      <GUID>c98d7020-8536-4134-a3e2-a734e8e0249f</GUID>
+      <Glyph>
+			  <Type>To Application Data Dir</Type>
+			  <Path>System Explorer\Glyphs\NI-XNET Incoming.png</Path>
+		  </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\FlexRay Custom Device\FlexRay Custom Device Configuration.llb\Incoming.vi</Path>
+      </Item2Launch>
+      <RunTimeMenu>
+          <MenuItem>
+            <GUID>a9a10e21-58a4-4b98-aa49-6bc2047028e5</GUID>
+            <Type>VI</Type>
+            <Execution></Execution>
+            <Behavior>OpenFrontPanel</Behavior>
+            <Name>
+              <eng>Add Frames</eng>
+              <loc>Add Frames</loc>
+            </Name>
+            <Item2Launch>
+              <Type>To Common Doc Dir</Type>
+		          <Path>Custom Devices\FlexRay Custom Device\FlexRay Custom Device Configuration.llb\Add Frames.vi</Path>
+            </Item2Launch>
+          </MenuItem>
+		  <MenuItem>
+            <GUID>07a6682c-c643-4e6b-9fab-aaf67c512cbc</GUID>
+            <Type>VI</Type>
+            <Execution></Execution>
+            <Behavior>OpenFrontPanel</Behavior>
+            <Name>
+              <eng>Delete Multiple Frames</eng>
+              <loc>Delete Multiple Frames</loc>
+            </Name>
+            <Item2Launch>
+              <Type>To Common Doc Dir</Type>
+		          <Path>Custom Devices\FlexRay Custom Device\FlexRay Custom Device Configuration.llb\Delete Multiple Frames.vi</Path>
+            </Item2Launch>
+          </MenuItem>
+        </RunTimeMenu>
+    </Page>
+	
+	<Page>
+      <Name>
+        <eng>Enable_Disable</eng>
+        <loc>Enable_Disable</loc>
+      </Name>
+      <GUID>ec354db5-9c8d-46eb-a3f4-59bfa10bb237</GUID>
+      <Glyph>
+			  <Type>To Application Data Dir</Type>
+			  <Path>System Explorer\Glyphs\sim model command.png</Path>
+		  </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\FlexRay Custom Device\FlexRay Custom Device Configuration.llb\Enable_Disable.vi</Path>
+      </Item2Launch>
+    </Page>
+		<Page>
+      <Name>
+        <eng>POC State</eng>
+        <loc>POC State</loc>
+      </Name>
+      <GUID>ec354db5-9c8d-46eb-a3f4-59bfa10bb239</GUID>
+      <Glyph>
+			  <Type>To Application Data Dir</Type>
+			  <Path>System Explorer\Glyphs\NI-XNET Status.png</Path>
+		  </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\FlexRay Custom Device\FlexRay Custom Device Configuration.llb\POC State.vi</Path>
+      </Item2Launch>
+    </Page>	
+	<Page>
+      <Name>
+        <eng>Outgoing</eng>
+        <loc>Outgoing</loc>
+      </Name>
+      <GUID>75018574-3c49-443e-8842-0b959c2eb90f</GUID>
+      <Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\NI-XNET Outgoing.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\FlexRay Custom Device\FlexRay Custom Device Configuration.llb\Outgoing.vi</Path>
+      </Item2Launch>
+    </Page>
+	<Page>
+      <Name>
+        <eng>Cyclic</eng>
+        <loc>Cyclic</loc>
+      </Name>
+      <GUID>373b1fd3-81ba-4d8e-b3d4-95e0417f15b0</GUID>
+      <Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\NI-XNET Periodic.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		    <Path>Custom Devices\FlexRay Custom Device\FlexRay Custom Device Configuration.llb\Cyclic.vi</Path>
+      </Item2Launch>
+      <RunTimeMenu>
+          <MenuItem>
+            <GUID>a9a10e21-58a4-4b98-aa49-6bc2047028e5</GUID>
+            <Type>VI</Type>
+            <Execution></Execution>
+            <Behavior>OpenFrontPanel</Behavior>
+            <Name>
+              <eng>Add Frames</eng>
+              <loc>Add Frames</loc>
+            </Name>
+            <Item2Launch>
+              <Type>To Common Doc Dir</Type>
+		          <Path>Custom Devices\FlexRay Custom Device\FlexRay Custom Device Configuration.llb\Add Frames.vi</Path>
+            </Item2Launch>
+          </MenuItem>
+		  <MenuItem>
+            <GUID>07a6682c-c643-4e6b-9fab-aaf67c512cbc</GUID>
+            <Type>VI</Type>
+            <Execution></Execution>
+            <Behavior>OpenFrontPanel</Behavior>
+            <Name>
+              <eng>Delete Multiple Frames</eng>
+              <loc>Delete Multiple Frames</loc>
+            </Name>
+            <Item2Launch>
+              <Type>To Common Doc Dir</Type>
+		          <Path>Custom Devices\FlexRay Custom Device\FlexRay Custom Device Configuration.llb\Delete Multiple Frames.vi</Path>
+            </Item2Launch>
+          </MenuItem>
+        </RunTimeMenu>
+    </Page>
+	<Page>
+      <Name>
+        <eng>Event</eng>
+        <loc>Event</loc>
+      </Name>
+      <GUID>cdaa898b-86df-49d7-a3b3-fd26b020a728</GUID>
+      <Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\NI-XNET Event Based.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\FlexRay Custom Device\FlexRay Custom Device Configuration.llb\Event.vi</Path>
+      </Item2Launch>
+      <RunTimeMenu>
+          <MenuItem>
+            <GUID>a9a10e21-58a4-4b98-aa49-6bc2047028e5</GUID>
+            <Type>VI</Type>
+            <Execution></Execution>
+            <Behavior>OpenFrontPanel</Behavior>
+            <Name>
+              <eng>Add Frames</eng>
+              <loc>Add Frames</loc>
+            </Name>
+            <Item2Launch>
+              <Type>To Common Doc Dir</Type>
+		          <Path>Custom Devices\FlexRay Custom Device\FlexRay Custom Device Configuration.llb\Add Frames.vi</Path>
+            </Item2Launch>
+          </MenuItem>
+		  <MenuItem>
+            <GUID>07a6682c-c643-4e6b-9fab-aaf67c512cbc</GUID>
+            <Type>VI</Type>
+            <Execution></Execution>
+            <Behavior>OpenFrontPanel</Behavior>
+            <Name>
+              <eng>Delete Multiple Frames</eng>
+              <loc>Delete Multiple Frames</loc>
+            </Name>
+            <Item2Launch>
+              <Type>To Common Doc Dir</Type>
+		          <Path>Custom Devices\FlexRay Custom Device\FlexRay Custom Device Configuration.llb\Delete Multiple Frames.vi</Path>
+            </Item2Launch>
+          </MenuItem>
+        </RunTimeMenu>
+    </Page>
+	<Page>
+      <Name>
+        <eng>Frame</eng>
+        <loc>Frame</loc>
+      </Name>
+      <GUID>58e98b2a-a2de-4811-bb4b-d9c14c05292d</GUID>
+      <Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\NI-XNET SignalFrame.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\FlexRay Custom Device\FlexRay Custom Device Configuration.llb\Frame.vi</Path>
+      </Item2Launch>
+    </Page>
+	<Page>
+      <Name>
+        <eng>Signal</eng>
+        <loc>Signal</loc>
+      </Name>
+      <GUID>c15b0c5e-0082-413d-b32b-8504b9b0c532</GUID>
+      <Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\NI-XNET Signal.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\FlexRay Custom Device\FlexRay Custom Device Configuration.llb\Signal.vi</Path>
+      </Item2Launch>
+    </Page>
+  </Pages>
+  <CustomXML>
+    <Dummy></Dummy>
+  </CustomXML>
+</CustomDevice>
